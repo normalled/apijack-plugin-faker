@@ -1,0 +1,49 @@
+{
+  "name": "@normalled/apijack-plugin-faker",
+  "version": "1.0.0",
+  "description": "Wrap @faker-js/faker for apijack routines",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "CHANGELOG.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "bun test",
+    "lint": "eslint src tests",
+    "lint:fix": "eslint src tests --fix",
+    "prepack": "bun run build"
+  },
+  "keywords": ["apijack", "faker", "plugin", "routine", "test-data"],
+  "author": "normalled",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/normalled/apijack-plugin-faker.git"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "json5": "^2.2.3"
+  },
+  "peerDependencies": {
+    "@apijack/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "@apijack/core": "file:/home/garret/projects/apijack",
+    "@types/bun": "latest",
+    "typescript": "^5.4.0",
+    "eslint": "^9.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=20",
+    "bun": ">=1.1"
+  }
+}
