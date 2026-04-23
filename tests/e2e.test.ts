@@ -48,7 +48,7 @@ describe('faker plugin e2e', () => {
             'helpers.arrayElement, ["red", "blue", "$pick"]',
             ctx,
         );
-        expect(['red', 'blue', 'green']).toContain(picked);
+        expect(['red', 'blue', 'green']).toContain(picked as string);
     });
 
     test('routines are isolated: two concurrent-style invocations with different seeds stay separate', () => {
