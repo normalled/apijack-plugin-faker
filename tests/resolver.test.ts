@@ -43,7 +43,7 @@ describe('_faker resolver', () => {
     test('helpers.arrayElement returns a member', () => {
         const fn = buildFakerResolver(mkInstance(42));
         const out = fn('helpers.arrayElement, ["a", "b", "c"]', mkHelpers());
-        expect(['a', 'b', 'c']).toContain(out);
+        expect(['a', 'b', 'c']).toContain(out as string);
     });
 
     test('number.int with min/max returns value in range', () => {
