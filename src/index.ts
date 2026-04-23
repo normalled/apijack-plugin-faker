@@ -31,5 +31,4 @@ export default function faker(defaults: FakerOptions = {}): ApijackPlugin {
     };
 }
 
-export type { FakerOptions };
 export { FakerPluginError } from './errors';
