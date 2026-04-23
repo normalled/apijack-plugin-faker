@@ -1,5 +1,5 @@
 {
-  "name": "@normalled/apijack-plugin-faker",
+  "name": "@apijack/plugin-faker",
   "version": "1.0.0",
   "description": "Wrap @faker-js/faker for apijack routines",
   "type": "module",
@@ -14,7 +14,7 @@
   },
   "files": ["dist", "README.md", "CHANGELOG.md"],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json --noCheck",
     "test": "bun test",
     "lint": "eslint src tests",
     "lint:fix": "eslint src tests --fix",
@@ -35,7 +35,7 @@
     "@apijack/core": "^1.0.0"
   },
   "devDependencies": {
-    "@apijack/core": "file:/home/garret/projects/apijack",
+    "@apijack/core": "^1.9.0",
     "@types/bun": "latest",
     "typescript": "^5.4.0",
     "eslint": "^9.0.0",

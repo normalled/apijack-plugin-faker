@@ -1,12 +1,12 @@
-# @normalled/apijack-plugin-faker
+# @apijack/plugin-faker
 
 Wrap [@faker-js/faker](https://www.npmjs.com/package/@faker-js/faker) for apijack routines. Call any faker function by dotted path from routine YAML with the exact same arguments you'd use in JavaScript.
 
 ## Install
 
 ```bash
-bun add @normalled/apijack-plugin-faker
-# or: npm install @normalled/apijack-plugin-faker
+bun add @apijack/plugin-faker
+# or: npm install @apijack/plugin-faker
 ```
 
 Requires `@apijack/core` `^1.0.0` as a peer dependency.
@@ -17,7 +17,7 @@ Register the plugin on your CLI:
 
 ```ts
 import { createCli } from '@apijack/core';
-import faker from '@normalled/apijack-plugin-faker';
+import faker from '@apijack/plugin-faker';
 
 const cli = createCli({ name: 'mycli', /* ... */ });
 cli.use(faker());                       // zero-config

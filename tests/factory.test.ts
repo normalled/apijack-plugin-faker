@@ -6,7 +6,7 @@ describe('faker() factory', () => {
         const p = faker();
         expect(p.name).toBe('faker');
         expect(p.version).toBe('1.0.0');
-        expect(p.__package?.name).toBe('@normalled/apijack-plugin-faker');
+        expect(p.__package?.name).toBe('@apijack/plugin-faker');
     });
 
     test('createRoutineResolvers returns an object with _faker', () => {

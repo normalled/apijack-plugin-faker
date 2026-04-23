@@ -21,7 +21,7 @@ export default function faker(defaults: FakerOptions = {}): ApijackPlugin {
     return {
         name: 'faker',
         version: '1.0.0',
-        __package: { name: '@normalled/apijack-plugin-faker' },
+        __package: { name: '@apijack/plugin-faker' },
         createRoutineResolvers: (opts: unknown): Record<string, CustomResolver> => {
             const merged: FakerOptions = { ...defaults, ...((opts as FakerOptions) ?? {}) };
             const instance = new Faker({ locale: resolveLocale(merged.locale) });
